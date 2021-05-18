@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#550600"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_title_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="107dp"
+        android:text="@string/covid_19_checker"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E8E3E3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_virus_main"
+        android:layout_width="285dp"
+        android:layout_height="279dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_title_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/covid_pic" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="447dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="344dp"
+        android:text="Check to see what Countries are using"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="441dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginEnd="11dp"
+        android:text="Daily Vaccination in a Country"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="407dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="476dp"
+        android:text="Percent Vaccinated in Country"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="Share Covid-19 Checker"
+        app:backgroundTint="#8D239F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/button3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
